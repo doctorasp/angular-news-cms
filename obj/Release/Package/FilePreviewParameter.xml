@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="NewsBlog20180513100706" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\BlogCMS\\BlogCMS\\NewsBlog\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\BlogCMS\\BlogCMS\\NewsBlog\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="NewsBlog20180513100706/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\BlogCMS\\BlogCMS\\NewsBlog\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-NewsBlog-20160604101625.mdf;Initial Catalog=aspnet-NewsBlog-20160604101625;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\BlogCMS\\BlogCMS\\NewsBlog\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
